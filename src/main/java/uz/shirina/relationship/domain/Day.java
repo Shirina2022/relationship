@@ -18,6 +18,10 @@ public class Day {
     @Column
     @Enumerated(EnumType.STRING)
     private DayEnum day;
-    @ManyToMany
+    @ManyToMany(mappedBy = "days")
     private List<ToDo> toDos;
+
+    public Day(DayEnum day) {
+        this.day = day;
+    }
 }

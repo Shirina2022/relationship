@@ -20,4 +20,10 @@ public class UserData {
     private String firstName;
     @Column
     private String lastName;
+
+    public UserData(User user, String firstName, String lastName) {
+        this.user = user;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 }

@@ -24,4 +24,8 @@ public class User {
     private List<ToDo> toDos;
     @OneToOne
     private UserData userData;
+
+    public User(String name) {
+        this.name = name;
+    }
 }
